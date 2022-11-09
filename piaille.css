@@ -1,0 +1,95 @@
+/* Roundness parameters */
+body {
+  --custom-corners: 1.9em;
+  --custom-corners-small: 10px;
+  --custom-corners-input: 12px;
+}
+
+/* Columns: resizable, spread, round */
+.drawer {
+  margin-right: auto;
+  resize: horizontal;
+  min-width: 240px;
+}
+.column {
+  padding: 0 !important;
+  margin: .5em;
+  margin-right: auto;
+  border-radius: var(--custom-corners);
+  resize: horizontal;
+}
+.column-header {
+  padding: 0 .4em 0 .1em;
+}
+
+.scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: #3b3f4c #20232c;
+}
+
+.drawer__pager {
+  border-radius: 0 0 var(--custom-corners) var(--custom-corners);
+}
+
+.search__input {
+  border-radius: var(--custom-corners);
+  padding-left: 20px
+}
+.search__icon .fa {
+  right: 20px;
+}
+.drawer__pager {
+  border-radius: var(--custom-corners-small) var(--custom-corners-small) var(--custom-corners) var(--custom-corners);
+  padding-top: 50px
+}
+
+.autosuggest-textarea textarea {
+  border-radius: var(--custom-corners-input) var(--custom-corners-input) 0 0 !important;
+}
+.compose-form__buttons-wrapper {
+  border-radius: 0 0 var(--custom-corners-input) var(--custom-corners-input) !important;
+}
+.compose-form__publish-button-wrapper button {
+  border-radius: var(--custom-corners-input) !important;
+}
+
+/* Gradient on the leftmost column */
+.drawer__inner {
+  overflow: visible;
+  background: linear-gradient(0deg, #181a20 0%,#333746 100%);
+  display: flex;
+}
+
+/* instance picture formatting */
+.drawer__inner__mastodon {
+  background: none;
+  flex: none;
+  margin-top: auto;
+  padding: 10px;
+}
+.drawer__inner__mastodon img {
+  max-width: 100%;
+  width: unset;
+  border-radius: calc(var(--custom-corners) - 10px);
+  height: fit-content;
+  margin: 0 auto;
+}
+
+/* Higher resolution bottom-left bird (piaille.fr) */
+.drawer__inner__mastodon {
+  background: url(https://piaille.fr/system/site_uploads/files/000/000/001/original/bird1200x630.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 200px;
+  padding: 0;
+  margin: auto 10px 10px 10px;
+  border-radius: 1.9em;
+}
+.drawer__inner__mastodon img {
+  visibility: hidden;
+}
+
+.drawer__header, .drawer__tab {
+  border-radius: var(--custom-corners);
+}

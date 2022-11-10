@@ -1,0 +1,15 @@
+@import "mastodon.scss";
+
+$img-url: "" !default;
+
+/* Custom picture */
+.drawer__inner__mastodon {
+  background: url( $img-url ); /* 👈 Put image url here. */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+  height: 5000px;
+}
+.drawer__inner__mastodon img {
+  visibility: hidden;
+}

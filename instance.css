@@ -78,7 +78,7 @@ body {
 /* Gradient on the leftmost column */
 .drawer__inner {
   overflow: visible;
-  background: linear-gradient(0deg, #20232c 0%, #333746 100%);
+  background: linear-gradient(0deg, #181a20 0%, #333746 100%);
   display: flex;
 }
 
@@ -134,19 +134,4 @@ body {
   height: fit-content;
   max-height: inherit;
   margin: 0 auto;
-}
-
-/* Custom picture */
-.drawer__inner__mastodon {
-  background: url("https://piaille.fr/system/site_uploads/files/000/000/001/original/bird1200x630.jpg"); /* 👈 Put image url here. */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  padding: 0;
-  margin: auto 10px 10px 10px;
-  border-radius: 15px;
-}
-
-.drawer__inner__mastodon img {
-  visibility: hidden;
 }

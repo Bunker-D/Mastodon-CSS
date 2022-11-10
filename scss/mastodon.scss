@@ -6,6 +6,8 @@ $input-bottom-bg: #232628;
 $input-bottom-col: #a8a9a9;
 $search-bg: #20232c;
 $search-focus: #242733;
+$left-top: #333746;
+$left-bottom: #20232c;
 $column-bg: #20232c;
 $column-head: #282c39;
 
@@ -92,14 +94,14 @@ body {
 
 .drawer__inner {
   overflow: visible;
-  background: linear-gradient(0deg, #181a20 0%,#333746 100%);
+  background: linear-gradient(0deg, $left-bottom 0%,$left-top 100%);
   display: flex;
 }
 .drawer__inner__mastodon {
   background: none;
   flex: none;
-  margin-top: auto;
-  max-height: 270px;
+  margin: auto 0 0 0;
+  max-height: 200px;
 }
 
 /* Roundness */

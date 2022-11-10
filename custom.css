@@ -85,7 +85,7 @@ body {
 .drawer__inner__mastodon {
   background: none;
   flex: none;
-  margin-top: auto;
+  margin: auto 0 0 0;
   max-height: 200px;
 }
 
@@ -138,13 +138,18 @@ body {
 
 /* Custom picture */
 .drawer__inner__mastodon {
-  background: url("https://piaille.fr/system/site_uploads/files/000/000/001/original/bird1200x630.jpg"); /* 👈 Put image url here. */
+  background: url(""); /* 👈 Put image url here. */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  /* 💡 👆 Controls the focus point when cropped.
+    First word:  top, center, or bottom
+    Second word: left, center, or right
+  */
   padding: 0;
   margin: auto 10px 10px 10px;
   border-radius: 15px;
+  height: 5000px;
 }
 
 .drawer__inner__mastodon img {

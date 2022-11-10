@@ -62,9 +62,9 @@ body {
 
 /* instance picture formatting */
 .drawer__inner__mastodon {
-  background: none;
-  flex: none;
-  margin-top: auto;
+  background: none; /*-*/
+  flex: none; /*-*/
+  margin-top: auto; /*-*/
   padding: 10px;
 }
 .drawer__inner__mastodon img {

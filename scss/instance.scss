@@ -3,7 +3,6 @@
 /* Properly frame a custom of instance-specific bottom-left image */
 .drawer__inner__mastodon {
   padding: 10px;
-  max-height: 170px; /* 💡 If the bottom-left picture grows to big, change that. */
 }
 .drawer__inner__mastodon img {
   max-width: 100%;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Columns: resizable, spread, round */
 .drawer {
   margin-right: auto;
@@ -15,6 +16,18 @@
 
 .column-header {
   padding: 0 0.4em 0 0.1em;
+}
+
+.drawer__inner {
+  overflow: visible;
+  display: flex;
+}
+
+.drawer__inner__mastodon {
+  max-height: 200px; /* 💡 If the bottom-left picture grows to big, change that. */
+  background: none;
+  flex: none;
+  margin: auto 0 0 0;
 }
 
 /* Recolor */
@@ -70,22 +83,14 @@ body {
 }
 
 .account__header__bar,
-.column-back-button {
+.column-back-button,
+.detailed-status,
+.detailed-status__action-bar {
   background: #282c39;
 }
 
-/* Gradient on the leftmost column */
 .drawer__inner {
-  overflow: visible;
   background: linear-gradient(0deg, #20232c 0%, #333746 100%);
-  display: flex;
-}
-
-.drawer__inner__mastodon {
-  background: none;
-  flex: none;
-  margin: auto 0 0 0;
-  max-height: 200px;
 }
 
 /* Roundness */

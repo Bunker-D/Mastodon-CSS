@@ -32,6 +32,16 @@ $corners-input: 12px;
 .column-header {
   padding: 0 .4em 0 .1em;
 }
+.drawer__inner {
+  overflow: visible;
+  display: flex;
+}
+.drawer__inner__mastodon {
+  max-height: 200px; /* 💡 If the bottom-left picture grows to big, change that. */
+  background: none;
+  flex: none;
+  margin: auto 0 0 0;
+}
 
 /* Recolor */
 
@@ -86,22 +96,14 @@ body {
   background: $column-bg;
 }
 .account__header__bar,
-.column-back-button {
+.column-back-button,
+.detailed-status,
+.detailed-status__action-bar {
   background: $column-head;
 }
 
-/* Gradient on the leftmost column */
-
 .drawer__inner {
-  overflow: visible;
-  background: linear-gradient(0deg, $left-bottom 0%,$left-top 100%);
-  display: flex;
-}
-.drawer__inner__mastodon {
-  background: none;
-  flex: none;
-  margin: auto 0 0 0;
-  max-height: 200px;
+  background: linear-gradient(0deg, $left-bottom 0%, $left-top 100%);
 }
 
 /* Roundness */

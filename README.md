@@ -1,5 +1,5 @@
 
-<a href="#how-to-use-those-files">
+<a href="#a-dynamic-theme-for-mastodon">
 <img height="14px" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt=""  />
 &nbsp;&nbsp;English</a><br>
 
@@ -8,7 +8,7 @@
 &nbsp;&nbsp;&nbsp;Français
 </a><br>
 
-<a href="#notes-to-developpers">
+<a href="#notes-to-developers">
 &nbsp;💻&nbsp;&nbsp;&nbsp;To developpers
 </a><br><br>
 
@@ -16,7 +16,7 @@
 
 ---
 
-# How to use those files
+# A dynamic theme for Mastodon
 
 ## Presentation
 
@@ -32,15 +32,15 @@ It brings:
 
 ### Set up the website and the browser to apply the custom theme
 
-- If not already done, enable the avanced web interface for Mastodon, and the Dark theme\*:
-  <br>Go in Mastodon “Preferences” (on the right side of the default Mastodon view). Then, in “Apparance”, check “Enable advanced web interface”, and select “Mastodon (Dark)” as the “Site them”.
+- If not already done, enable the **Dark theme**\* and the **advanced web interface** for Mastodon:
+  <br>Go in Mastodon “Preferences” (on the right side of the default Mastodon view). Then, in “Appearance”, check “Enable advanced web interface”, and select “Mastodon (Dark)” as the “Site them”.
   <br>\* Alternatively, if you do not want to use a dark theme, you can [remove the additional recoloring](#no-color) provided by this tool.
-- Install the *Stylus* browser extension, or any other extension that allows to apply custom CSS to a web page. *Stylus* is available on [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) and [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)).
+- Install the ***Stylus*** browser extension, or any other extension that allows to apply custom CSS to a web page. *Stylus* is available on [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) and [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)).
 - Add a style for your Mastodon web page. Typically, for *Stylus*:
-  - Go to the your Mastodon web page,
+  - Go to your Mastodon web page,
   - Click the button of the extension, then click “Write style for …”. (Stop at the first slash, thus including the name of your instance but not more than that.)
-- Select [the right CSS file](#choose-the-right-css-file), copy-paste the CSS code in the *Stylus* window.
-- [Customize](#customization) if need be.
+- Select [**the right CSS file**](#choose-the-right-css-file), copy-paste the CSS code in the *Stylus* window.
+- [**Customize**](#customization) if need be.
 
 ### Choose the right CSS file
 
@@ -49,18 +49,18 @@ The only difference between the proposed CSS files lies in how the decorative bo
 <!-- TODO choice diagram -->
 
 - If you want to keep the **instance image**:
-  - If your instance uses something that is integrated to the design **with transparancy**, and that shall be kept to the lower left corner (which is the Mastodon default with a mastodon drawing, seen in most instances), use [`mastodon.css`](mastodon.css).
-  - If your instance uses a custom picture with **no transparancy** that should be properly framed and centered, use [`instance.css`](instance.css).
+  - If your instance uses something that is integrated to the design **with transparency**, and that shall be kept to the lower left corner (which is the case for many instances that keep the default mastodon 🐘 drawing), use [`mastodon.css`](mastodon.css).
+  - If your instance uses a custom picture with **no transparency** that should be properly framed and centered, use [`instance.css`](instance.css).
 - If you want to use **you own image** (or **no image**):
-  - If it has **transparancy** and be kept to the lower left corner, use [`custom-transp.css`](custom-transp.css).
-  - If it has **no transparancy** and shall be properly framed, used [`custom.css`](custom.css).<br>
+  - If it has **transparency** and be kept to the lower left corner, use [`custom-transp.css`](custom-transp.css).
+  - If it has **no transparency** and shall be properly framed, used [`custom.css`](custom.css).<br>
     (While `instance.css` will center the image when the column is too wide for it, `custom.css` was created to use higher resolution images that would take the whole available width, and be cropped accordingly to fit a target height.)
 
 ### Customization
 
 #### Specify a custom picture
 
-If you are using `custom.css` or `custom-transp.css`, find these lines (toward the end) and put the url of the image you want to use in between the parentheses:
+If you are using `custom.css` or `custom-transp.css`, find these lines (toward the end) and put the URL of the image you want to use in between the parentheses:
 ```css
 .drawer__inner__mastodon {
   background: url(""); /* 👈 Put image url here. */
@@ -109,32 +109,32 @@ Find these lines and change the maximal height (by default, `200px`) as you see 
 
 ---
 
-# Comment utiliser ces fichiers
+# Un thème dynamique pour Mastodon
 
 ## Présentation
 
 Il s'agit d'une surcouche CSS qui peut être appliquée à l'interface web avancée des sites Mastodon.
 (Ne vous en fait pas, vous n'avez pas besoin de connaître le CSS, ou même ce que “CSS” signifie.)
 
-Ça vous apportera:
+Ça vous apportera :
 - La possibilité de contrôler la largeur des colonnes (en tirant le coin en bas à droite de chaque colonne),
 - Un design plus rond,
 - Des colonnes réparties sur la page web et non regroupées à gauche,
-- Une meilleure prise en charge de l'image décorative (en bas à gauche) sur certains instances, et la possibilité de mettre la vôtre à la place.
+- Une meilleure prise en charge de l'image décorative (en bas à gauche) sur certaines instances, et la possibilité de mettre la vôtre à la place.
 
 ## Installation
 
 ### Préparer le site et le navigateur pour appliquer le thème
 
-- Si vous ne l'avez pas déjà fait, activez l'interface web avancée de Mastodon, et le thème sombre\* :
+- Si vous ne l'avez pas déjà fait, activez le **thème sombre**\* et l'**interface web avancée** de Mastodon :
   <br>Cliquez sur “Préférences” (à droite dans la vue simple par défaut de Mastodon).
-  <br>\*Alternativement, si vous ne voulez pas un thpme sombre, vous pourrez [retirer les couleurs](#pas-de-couleur) céées pas cet outil.
-- Installez l'extension de navigateur *Stylus*, ou tout autre extension permettant d'appliquer un code CSS personnalisé à une page web. *Stylus* est disponible sur [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) et [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)).
+  <br>\*Alternativement, si vous ne voulez pas un thème sombre, vous pourrez [retirer les couleurs](#pas-de-couleur) créées pas cet outil.
+- Installez l'extension de navigateur ***Stylus***, ou tout autre extension permettant d'appliquer un code CSS personnalisé à une page web. *Stylus* est disponible sur [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) et [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)).
 - Ajoutez un style pour votre site Mastodon. Typiquement, avec *Stylus" :
   - Allez sur votre site Mastodon,
-  - Cliquez le bouton de l'extension, puis cliquez sur “Write style for …”. (Arrêtez vous à la première barre oblique, incluant ainsi le nom de votre instance Mastodon mais pas plus que ça.)
-- Sélectionnez [le bon fichier CSS](#choisir-le-bon-fichier-css), et copiez-collez le code dans la fenêtre ouverte par *Stylus* à l'étape précédente.
-- [Personnalisez](#personnalisation) si nécessaire.
+  - Cliquez le bouton de l'extension, puis cliquez sur “Write style for …”. (Arrêtez-vous à la première barre oblique, incluant ainsi le nom de votre instance Mastodon mais pas plus que ça.)
+- Sélectionnez [**le bon fichier CSS**](#choisir-le-bon-fichier-css), et copiez-collez le code dans la fenêtre ouverte par *Stylus* à l'étape précédente.
+- [**Personnalisez**](#personnalisation) si nécessaire.
 
 ### Choisir le bon fichier CSS
 
@@ -147,8 +147,8 @@ La seule différence entre les fichiers CSS proposés est dans le traitement de 
   - Si l'image est une image **sans transparence** qui gagne à être proprement cadrée et centrée, utilisez [`instance.css`](instance.css).
 - Si vous voulez utilisez une **image de votre choix** (ou **pas d'image**) :
   - Si elle a de la transparence et gagne à rester dans le coin en bas à gauche, utilisez [`custom-transp.css`](custom-transp.css).
-  - Si elle n'a pas de transparance, et doit gagne à être cadrée et centrée, utilisez [`custom.css`](custom.css).<br>
-    (Tandis que `instance.css` centrera l'image quand la colonne de gauche est tros large pour elle, `custom.css` a été créé pour utiliser une image de plus grande résolution qui prendra toute la largeur disponible, et rognera pour atteindre la hauteur attendue. Typiquement, `piaille.css` a été créé pour piaille.fr, et remplace la photo d'oiseau de l'instance par une version de meilleure qualité.)
+  - Si elle n'a pas de transparence, et gagne à être cadrée et centrée, utilisez [`custom.css`](custom.css).<br>
+    (Tandis que `instance.css` centrera l'image quand la colonne de gauche est trop large pour elle, `custom.css` a été créé pour utiliser une image de plus grande résolution qui prendra toute la largeur disponible, et rognera pour atteindre la hauteur attendue. Typiquement, `piaille.css` a été créé pour piaille.fr, et remplace la photo d'oiseau de l'instance par une version de meilleure qualité.)
 
 ### Personnalisation
 
@@ -170,7 +170,7 @@ Le premier `center` (centre) peut être remplacé avec `top` (haut) ou `bottom` 
 
 Vous pouvez modifier le reste du code comme vous le souhaitez. Pour ce ne maîtrisant pas le CSS, voilà quelques modifications que vous pourriez vouloir faire et comment :
 
-<details id="pas-de-couleur"><summary><strong>Vou n'aimez pas les nouvelles couleurs?</strong></summary><p>
+<details id="pas-de-couleur"><summary><strong>Vous n'aimez pas les nouvelles couleurs ?</strong></summary><p>
 
 Retirez simplement toute la section *Recolor* dans le code (de `/* Recolor */` à `/* Roundness */`).
 
@@ -203,10 +203,10 @@ Cherchez ces lignes et changez la hauteur maximale (`max-height`, qui est par d�
 
 ---
 
-# Notes to developpers
+# Notes to developers
 
 If you want to toy with this project, know that the CSS files are compiled from the SCSS files in the `sccs/` folder.
-This allow to not have to manually duplicate the same pieces of code through the various CSS files.
+This avoids to manually duplicate the same pieces of code throughout the various CSS files.
 
 The CSS might not be optimally organized: some selectors can appear several times.
 This is because I prioritized ease of modification for the users (including those not knowing CSS).

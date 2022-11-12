@@ -105,6 +105,33 @@ Find these lines and change the maximal height (by default, `200px`) as you see 
 
 </p></details>
 
+<details><summary><strong>Defining default column widths</strong></summary><p>
+
+It is not possible to memorize the column widths to be reused the next time you open the web page. However, you can define default column widths by adding lines to the CSS code.
+
+For the leftmost column:
+```css
+.drawer { width: 20%; }
+```
+
+For the other columns:
+```css
+.column { width: 20%; }
+```
+
+For the 2<sup>nd</sup> column (“Home”):
+```css
+.column:nth-of-type(2) { width: 20%; }
+```
+
+For the 3<sup>rd</sup> column (“Notifications”):
+```css
+.column:nth-of-type(2) { width: 20%; }
+```
+
+In the previous examples, the column width(s) were set to 20% of the total width of the page; but you can put whatever size you want. You can also use pixels as the unit (e.g., by replacing `20%` by `400px`), or even do calculations between percents and pixels (e.g., ny replacing `20%` by `calc( 25% - 30px )`).
+
+</p></details>
 <br>
 
 ---
@@ -196,6 +223,34 @@ Cherchez ces lignes et changez la hauteur maximale (`max-height`, qui est par d�
 .drawer__inner__mastodon {
   max-height: 200px; /* 💡 If the bottom-left picture grows to big, change that. */
 ```
+
+</p></details>
+
+<details><summary><strong>Fixer des largueurs de colonne par défaut</strong></summary><p>
+
+Il n'est pas possible de mémoriser les largeurs des colonnes pour les réutiliser la prochaine fois où vous ouvrirez la page. En revanche il est possible de fixer des largeurs par défaut en ajoutant des lignes au code CSS.
+
+Pour la colonne de gauche :
+```css
+.drawer { width: 20%; }
+```
+
+Pour les autres colonnes :
+```css
+.column { width: 20%; }
+```
+
+Pour la deuxième colonne (“Accueil”) :
+```css
+.column:nth-of-type(2) { width: 20%; }
+```
+
+Pour la troisième colonne (“Notifications”) : 
+```css
+.column:nth-of-type(2) { width: 20%; }
+```
+
+Les exemples précédents fixent la largeur de la ou des colonnes à 20% de la largeur de la page, mais vous pouvez mettre ce que vous voulez. Vous pouvez aussi utiliser des pixels comme unité (ex. en remplaçant `20%` par `400px`), ou même des calculs entre pourcents et pixels (ex. en remplaçant `20%` par `calc( 25% - 30px )`).
 
 </p></details>
 

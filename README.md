@@ -3,7 +3,7 @@
 <img height="14px" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt=""  />
 &nbsp;&nbsp;English</a><br>
 
-<a href="#comment-utiliser-ces-fichiers">
+<a href="#un-th%C3%A8me-dynamique-pour-mastodon">
  <img height="14px"  src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg" alt="" />
 &nbsp;&nbsp;&nbsp;Français
 </a><br>

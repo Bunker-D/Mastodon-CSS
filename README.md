@@ -141,7 +141,7 @@ In the previous examples, the column width(s) were set to 20% of the total width
 ## Présentation
 
 Il s'agit d'une surcouche CSS qui peut être appliquée à l'interface web avancée des sites Mastodon.
-(Ne vous en fait pas, vous n'avez pas besoin de connaître le CSS, ou même ce que “CSS” signifie.)
+(Ne vous en faites pas, vous n'avez pas besoin de connaître le CSS, ou même ce que “CSS” signifie.)
 
 Ça vous apportera :
 - La possibilité de contrôler la largeur des colonnes (en tirant le coin en bas à droite de chaque colonne),
@@ -195,7 +195,7 @@ Le premier `center` (centre) peut être remplacé avec `top` (haut) ou `bottom` 
 
 #### Autres modifications personnelles
 
-Vous pouvez modifier le reste du code comme vous le souhaitez. Pour ce ne maîtrisant pas le CSS, voilà quelques modifications que vous pourriez vouloir faire et comment :
+Vous pouvez modifier le reste du code comme vous le souhaitez. Pour ceux et celles qui ne maîtrisent pas le CSS, voilà quelques modifications que vous pourriez vouloir faire et comment :
 
 <details id="pas-de-couleur"><summary><strong>Vous n'aimez pas les nouvelles couleurs ?</strong></summary><p>
 
@@ -226,7 +226,7 @@ Cherchez ces lignes et changez la hauteur maximale (`max-height`, qui est par d�
 
 </p></details>
 
-<details><summary><strong>Fixer des largueurs de colonne par défaut</strong></summary><p>
+<details><summary><strong>Fixer des largeurs de colonne par défaut</strong></summary><p>
 
 Il n'est pas possible de mémoriser les largeurs des colonnes pour les réutiliser la prochaine fois où vous ouvrirez la page. En revanche il est possible de fixer des largeurs par défaut en ajoutant des lignes au code CSS.
 

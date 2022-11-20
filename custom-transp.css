@@ -24,6 +24,10 @@
   padding: 0 0.4em 0 0.1em;
 }
 
+.column-header__back-button {
+  background-color: inherit;
+}
+
 .drawer__inner {
   display: flex;
   scrollbar-width: thin;
@@ -77,6 +81,11 @@ body {
 .column-header,
 .column-header__button {
   background: #282c39;
+}
+
+.column-header__collapsible {
+  scrollbar-width: thin;
+  scrollbar-color: #393f4f #20232c;
 }
 
 .column > .scrollable {

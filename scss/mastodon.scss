@@ -17,6 +17,7 @@ $left-top: #333746;
 $left-bottom: #20232c;
 $column-bg: #20232c;
 $column-head: #282c39;
+$column-head-drop: #393f4f;
 
 $corners: 25px;
 $corners-small: 10px;
@@ -39,10 +40,13 @@ $corners-input: 12px;
 .column-header {
   padding: 0 .4em 0 .1em;
 }
+.column-header__back-button{
+  background-color: inherit;
+}
 .drawer__inner {
   display: flex;
   scrollbar-width: thin;
-  scrollbar-color: #282c39 #20232c;
+  scrollbar-color: $column-head $column-bg;
 }
 .drawer__inner__mastodon {
   max-height: 200px; /* 💡 If the bottom-left picture grows to big, change that. */
@@ -94,6 +98,11 @@ body {
 .column-header__button {
   background: $column-head;
 }
+.column-header__collapsible {
+  scrollbar-width: thin;
+  scrollbar-color: $column-head-drop $column-bg;
+}
+
 .column > .scrollable {
   background: $column-bg;
   scrollbar-width: thin;

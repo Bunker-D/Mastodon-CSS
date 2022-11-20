@@ -40,8 +40,9 @@ $corners-input: 12px;
   padding: 0 .4em 0 .1em;
 }
 .drawer__inner {
-  overflow: visible;
   display: flex;
+  scrollbar-width: thin;
+  scrollbar-color: #282c39 #20232c;
 }
 .drawer__inner__mastodon {
   max-height: 200px; /* 💡 If the bottom-left picture grows to big, change that. */
@@ -138,3 +139,20 @@ body {
   border-radius: $corners-input !important;
 }
 
+/* Default widths */
+
+.drawer{ /* Left pannel */
+  width: 15%;
+}
+
+.column{ /* Other pannels */
+  width: 17%;
+}                  
+
+.column:nth-of-type(2) { /* Second pannel (overriding “other pannels”) */
+  width: 27%;
+}  
+
+.column:nth-of-type(4) { /* Fourth pannel (overriding “other pannels”) */
+  width: 22%;
+}
